@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title %}Upload Complete - Transport Data QA{% endblock %}
+
+{% block content %}
+
+<div class="alert alert-success">
+    Dataset uploaded successfully.
+</div>
+
+<div class="card shadow-sm">
+    <div class="card-body">
+        <h5 class="card-title">Uploaded file</h5>
+        <p class="mb-0"><code>{{ filename }}</code></p>
+    </div>
+</div>
+
+<a href="/upload" class="btn btn-secondary mt-3">Upload another file</a>
+
+{% endblock %}
